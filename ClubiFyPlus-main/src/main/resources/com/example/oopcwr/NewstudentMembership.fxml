@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="492.0" prefWidth="676.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopcwr.NewstudentMembership">
+   <children>
+      <Text layoutX="66.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Our New Members !">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Text>
+      <Text layoutX="52.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Name">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Label layoutX="50.0" layoutY="185.0" text="Grade">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="392.0" layoutY="185.0" text="Class">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="226.0" text="Student gender">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="50.0" layoutY="344.0" text="Student Email Address">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="48.0" layoutY="305.0" text="Student phone number">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="50.0" layoutY="144.0" prefHeight="0.0" prefWidth="317.0" text="Student ID (Student Admission Number)">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="51.0" layoutY="385.0" text="Password">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Button layoutX="384.0" layoutY="425.0" mnemonicParsing="false" onAction="#btnSubmitNewMemberClicked" prefHeight="51.0" prefWidth="264.0" style="-fx-background-color: #44307c; -fx-background-radius: 20;" text="Submit" textFill="#fffdfd">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></Button>
+      <TextField fx:id="snametb" layoutX="189.0" layoutY="96.0" prefHeight="26.0" prefWidth="448.0" />
+      <TextField fx:id="smailtb" layoutX="233.0" layoutY="341.0" prefHeight="26.0" prefWidth="301.0" />
+      <RadioButton fx:id="rb1" layoutX="221.0" layoutY="226.0" mnemonicParsing="false" selected="true" text="Male">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="gender" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rb2" layoutX="309.0" layoutY="226.0" mnemonicParsing="false" text="Female" toggleGroup="$gender">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </RadioButton>
+      <TextField fx:id="snotb" layoutX="231.0" layoutY="302.0" prefHeight="26.0" prefWidth="200.0" />
+      <TextField fx:id="spasstb" layoutX="234.0" layoutY="382.0" />
+      <TextField fx:id="sidtb" layoutX="408.0" layoutY="142.0" prefHeight="26.0" prefWidth="230.0" />
+      <Button fx:id="btnback" layoutX="52.0" layoutY="438.0" mnemonicParsing="false" onAction="#btnbackClicked" prefHeight="37.0" prefWidth="76.0" style="-fx-background-color: #44307c; -fx-background-radius: 20;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <ChoiceBox fx:id="sclasscb" layoutX="487.0" layoutY="192.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="sgradecb" layoutX="125.0" layoutY="183.0" prefWidth="150.0" />
+      <DatePicker fx:id="sdobtb" layoutX="231.0" layoutY="259.0" />
+      <Label layoutX="47.0" layoutY="262.0" text="Date of Birth">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

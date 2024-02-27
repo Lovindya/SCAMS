@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="494.0" prefWidth="678.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopcwr.Advisormyacc">
+   <children>
+      <Text layoutX="145.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to My Account">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnadviback" layoutX="72.0" layoutY="391.0" mnemonicParsing="false" onAction="#btnadvibackclicked" prefHeight="51.0" prefWidth="110.0" style="-fx-background-color: #44307c; -fx-background-radius: 20;" text="Back" textFill="#fffcfc">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnadviuexit" layoutX="464.0" layoutY="391.0" mnemonicParsing="false" onAction="#btnadviexittclicked" style="-fx-background-color: #44307c; -fx-background-radius: 20;" text="Exit system" textFill="#fcf9f9">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Label layoutX="84.0" layoutY="156.0" text="Name" />
+      <Label fx:id="adnameval" layoutX="170.0" layoutY="156.0" />
+      <Label layoutX="85.0" layoutY="197.0" text="Clubs" />
+      <TableView fx:id="tableAdv" layoutX="209.0" layoutY="206.0" prefHeight="130.0" prefWidth="424.0">
+        <columns>
+          <TableColumn fx:id="colClub" prefWidth="127.20002746582031" text="Club name" />
+          <TableColumn fx:id="colPos" prefWidth="83.199951171875" text="Position" />
+            <TableColumn fx:id="colDate" prefWidth="112.00006103515625" text="Date Joined" />
+            <TableColumn fx:id="colButton" prefWidth="100.800048828125" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
